@@ -10,9 +10,9 @@ export class AppService {
   constructor(private http:HttpClient) { }
 
   getLanguages(): Observable<any> {
-    return this.http.get('/assets/lang.json',{ headers: null });
+    return this.http.get('assets/lang.json',{ headers: null });
   }
   getCampaignData(): Observable<any> {
-    return this.http.get('/assets/mock.json',{ headers: null });
+    return this.http.get('assets/mock.json',{ headers: null });
   }
 }
